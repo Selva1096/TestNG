@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="com.amazon.stepdefinition.DealsOfTheDayValidation">
+        <methods>
+          <include name="ac"/>
+          <include name="bc"/>
+          <include name="DealOfDay"/>
+          <include name="startsAt"/>
+          <include name="endsAt"/>
+        </methods>
+      </class> <!-- com.amazon.stepdefinition.DealsOfTheDayValidation -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <groups>
+      <run>
+        <include name="default"/>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.amazon.stepdefinition.ShoesValidation">
+        <methods>
+          <include name="search"/>
+          <include name="select"/>
+          <include name="ac"/>
+          <include name="bc"/>
+        </methods>
+      </class> <!-- com.amazon.stepdefinition.ShoesValidation -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
